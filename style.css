@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  padding-bottom: 50px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #6a5af9, #8e2de2);
+  color: white;
+}
+
+/* Categories Section */
+.categories-section {
+  width: 100%;
+  padding: 30px;
+}
+
+.categories-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column; /* Arrange vertically */
+  gap: 15px;
+}
+
+.categories a{
+  text-decoration: none;
+}
+
+/* Individual category blocks */
+.category {
+  padding: 18px;
+  background: linear-gradient(135deg, #ececec, #dcdcdc);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: background 0.5s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover animation colors */
+.category:hover {
+  background: linear-gradient(135deg, #6a5af9, #8e2de2);
+  color: white;
+  transform: translateX(10px);
+}
+
+/* Click ripple effect */
+.category:active {
+  animation: clickRipple 0.4s ease-out;
+}
+
+/* Ripple keyframes */
+@keyframes clickRipple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(138, 56, 244, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(138, 56, 244, 0);
+  }
+}
+
+/* Main content section */
+.content {
+  padding: 30px;
+}
+
+.content h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.footer {
+    background: #222;
+    color: #ddd;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #6a5af9;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.feedbback form{
+  margin: 0 440px;
+  border: solid black 1px;
+  border-radius: 15px;
+  background-color: #444242;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8rem;
+
+}
+.feedbback form button {
+  background-color: rgb(37, 123, 149);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 40px;
+  width: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.large-input {
+    width: 100%;       /* Full width */
+    height: 50px;      /* Increase height */
+    font-size: 18px;   /* Larger text */
+    padding: 12px;     /* Space inside */
+    border-radius: 8px;
+}

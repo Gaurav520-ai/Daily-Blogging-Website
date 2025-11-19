@@ -1,0 +1,88 @@
+body {
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(135deg, #6a5af9, #8e2de2);
+    padding: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 900px;
+}
+
+.editor {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.editor input,
+.editor textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 150px;
+}
+
+.upload-label {
+    font-weight: bold;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.create {
+    background: #28a745;
+    color: white;
+}
+
+.delete {
+    background: #ff4b4b;
+    color: white;
+}
+
+.blog-card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.blog-card img,
+.blog-card video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.blog-content {
+    margin-top: 10px;
+    line-height: 1.6;
+}

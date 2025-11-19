@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Lifestyle Blog</title>
+    <link rel="stylesheet" href="life.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Daily Lifestyle Blog </h1>
+        <p>Write and manage your Lifestyle blogs here.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Blog Editor -->
+        <section class="editor">
+            <h2>Create New Blog</h2>
+
+            <input type="text" id="titleInput" placeholder="Blog Title" required>
+
+            <textarea id="contentInput" placeholder="Write your blog content here..." required></textarea>
+
+            <label class="upload-label">Upload Image/Video:</label>
+            <input type="file" id="mediaInput" accept="image/*,video/*">
+
+            <button id="createBtn" class="btn create">Create Blog</button>
+        </section>
+
+        <hr>
+
+        <!-- Saved Blogs Section -->
+        <section class="blogs">
+            <h2>Saved Blogs</h2>
+            <div id="blogContainer"></div>
+        </section>
+
+    </div>
+
+    <script src="life.js"></script>
+</body>
+</html>
